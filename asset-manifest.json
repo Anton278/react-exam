@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-exam/static/css/main.662e0c09.css",
+    "main.js": "/react-exam/static/js/main.87a659d3.js",
+    "static/media/Roboto.svg": "/react-exam/static/media/Roboto.b4bba0fe605397fa5dac.svg",
+    "static/media/Roboto.eot": "/react-exam/static/media/Roboto.ffdb6afaa75355e57a82.eot",
+    "static/media/Roboto.ttf": "/react-exam/static/media/Roboto.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Roboto.woff": "/react-exam/static/media/Roboto.ff9a0eb81b025d195cd3.woff",
+    "static/media/heart.svg": "/react-exam/static/media/heart.540fe9c3107970557d70d9499764f9f3.svg",
+    "static/media/close.svg": "/react-exam/static/media/close.9928a16294f751e78009415e657cf3ff.svg",
+    "static/media/message.svg": "/react-exam/static/media/message.e8795f53fa5d5bd4d03e0141a5cd73f1.svg",
+    "static/media/filled-heart.svg": "/react-exam/static/media/filled-heart.870ed1c2dbc35fc420232bf6be1d2d17.svg",
+    "index.html": "/react-exam/index.html",
+    "static/media/open.svg": "/react-exam/static/media/open.eda166d856d289b61ef2097272a84cdc.svg",
+    "static/media/open-in-new.svg": "/react-exam/static/media/open-in-new.9302ca7a903d8c5076dbe82f7f6ebd60.svg",
+    "main.662e0c09.css.map": "/react-exam/static/css/main.662e0c09.css.map",
+    "main.87a659d3.js.map": "/react-exam/static/js/main.87a659d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.662e0c09.css",
+    "static/js/main.87a659d3.js"
+  ]
+}
