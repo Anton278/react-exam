@@ -43,6 +43,7 @@
         cursor: pointer;
     }
     .favourite {
+        z-index: 2;
         width: 60%;
         height: 100%;
         overflow-y: auto;
