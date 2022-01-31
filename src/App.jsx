@@ -29,7 +29,9 @@ const App = () => {
       <div className="subtitle">Let's try to find a joke for you:</div>
       <Form setData={setData} />
       <div className="cards-wrapp">
-        {(data?.result && data.result.map(joke => 
+        {(data?.error && <></>)
+        ||
+        (data?.result && data.result.map(joke => 
             <Card 
             className={"card-in-main"}
             key={joke.id} 
@@ -41,7 +43,8 @@ const App = () => {
             favouriteJokes={favouriteJokes} 
             setFavouriteJokes={setFavouriteJokes} 
           />
-        )) ||
+        )) 
+        ||
         (data && <Card 
           className={"card-in-main"}
           id={data.id} 
@@ -58,10 +61,6 @@ const App = () => {
     <Favourite blurBlock={blurBlock} favouriteJokes={favouriteJokes} setFavouriteJokes={setFavouriteJokes}/>
     </>
   );
-
-  // if (data.result) {
-  //   data.result
-  // }
 };
 
 export default App;
