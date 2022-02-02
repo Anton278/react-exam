@@ -7,7 +7,7 @@ import Favourite from "./components/Favourite";
 import { useEffect, useRef, useState } from "react";
 
 const App = () => {
-  if (!localStorage.favouriteJokes) {
+  if (!localStorage.getItem("favouriteJokes")) {
     localStorage.setItem("favouriteJokes", JSON.stringify([]));
   }
   
