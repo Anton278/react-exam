@@ -13,20 +13,14 @@ const Card = ({className, id, url, value, lastUpdated, category, favouriteJokes,
     const categoryBlock = <div className="card__category">{category}</div>; // if category exist
 
     useEffect(() => {
-        (isFavouriteJoke()) ? setImg(filledHeart) : setImg(heart);
-    });
+        setImg(heart);
+        favouriteJokes.forEach((joke) => {
+            if (joke.id === id) setImg(filledHeart);
+        });
+    }, [id, favouriteJokes]);
 
-    const isFavouriteJoke = () => {
-        for (let i = 0; i < favouriteJokes.length; i++) {
-            if (favouriteJokes[i].id === id) {
-                return true;
-            }
-        }
-        return false;
-    };
-        
     const favouriteJokesHandler = () => {
-        if (isFavouriteJoke()) {
+        if (img === filledHeart) {
             setImg(heart);
             setFavouriteJokes(favouriteJokes => favouriteJokes.filter(joke => joke.id !== id));
         } else {
